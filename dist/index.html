@@ -4,10 +4,33 @@
   <meta charset="UTF-8">
   <title>It's gonna rain</title>
   <script src="https://cdn.rawgit.com/mohayonao/web-audio-api-shim/master/build/web-audio-api-shim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
-  <script src="./bundle.js"></script>
+  <style>
+  .container {
+    border: #000 solid 2px;
+    width: fit-content;
+    margin: 1.5em;
+    padding: 1em;
+    border-radius: 0.5em;
+    font-family: sans-serif;
+  }
+  .headliner h2 {
+    margin: 0;
+  }
+  .button-container {
+    margin-top: 0.6em;
+  }
+  </style>
 </head>
 <body>
-
+  <div class="container">
+    <div class="headliner">
+      <h2>Maniacal Laughter Player</h2>
+    </div>
+    <div class="button-container">
+      <button disabled class="play control">▶️</button>
+      <button disabled class="stop control">⏹️</button>
+    </div>
+  </div>
+  <script src="./bundle.js"></script>
 </body>
 </html>
